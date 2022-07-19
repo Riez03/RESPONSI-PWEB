@@ -1,0 +1,10 @@
+Struct Pemesanan di Toko Bangunan
+Tanggal : 19-07-2022
+Nama : Fahrizky Syihabudin Ibrahim
+Alamat : Tulungagung, Jawa Timur
+No. Telp/ Wa : 081333732073
+Material : Baja Ringan
+Merek : CBM
+Jumlah : 50
+Pesan : Dikirim Tgl 29 mei
+

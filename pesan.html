@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Web Responsive</title>
+        <link rel="stylesheet" href="pesan.css">
+    </head>
+    <body background="background.jpg">
+        <div class="badan-utama">
+            
+            <header>
+                <h2>Toko Bangunan</h2>
+                <p>Menyediakan Berbagai Bahan dan Alat Bangunan</p>
+            </header>
+    
+            <nav class="navigasi">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="Brosur.pdf">Brosur</a></li>
+                    <li><a href="store.html">Store</a></li>
+                </ul>
+            </nav>
+    
+            <div class="banner">
+                <img src="background-atas.jpg.crdownload" alt="background-atas">
+            </div>
+    
+            <div class="menu-tengah">
+                <div class="kotak">
+                    <h3>Daftar Material</h3>
+                    <span class="tanggal-posting">
+                        Diupdate pada 11.04 WIB, 14 Juli 2022
+                    </span>
+                    <table border="1" align="center" cellspacing="0">
+                        <tr align="center">
+                            <td><b>Material</b></td><td><b>Merek</b></td><td><b>Stock</b></td><td><b>Harga</b></td>
+                        <tr>
+                        <tr>
+                            <td>Semen</td><td>Tiga Roda</td><td>150</td><td>Rp 55.000</td>
+                        </tr>
+                        <tr>
+                            <td>Semen</td><td>Gresik</td><td>140</td><td>Rp 50.000</td>
+                        </tr>
+                        <tr>
+                            <td>Pipa</td><td>Rucika</td><td>200</td><td>Rp 20.000/m</td>
+                        </tr>
+                        <tr>
+                            <td>Pipa</td><td>Alderon</td><td>250</td><td>Rp 15.000/m</td>
+                        </tr>
+                        <tr>
+                            <td>Baja Ringan</td><td>CBM</td><td>300</td><td>Rp 25.000/m</td>
+                        </tr>
+                        <tr>
+                            <td>Baja Ringan</td><td>Cilegon Steel</td><td>290</td><td>Rp 23.000/m</td>
+                        </tr>
+                        <tr>
+                            <td>Genteng Metal</td><td>Multi Roof</td><td>500</td><td>Rp 11.000</td>
+                        </tr>
+                        <tr>
+                            <td>Genteng Metal</td><td>Cahaya Roof</td><td>600</td><td>Rp 13.000</td>
+                        </tr>
+                        <tr>
+                            <td>Keramik</td><td>Roman</td><td>600</td><td>Rp 30.000/box</td>
+                        </tr>
+                        <tr>
+                            <td>Keramik</td><td>KIA</td><td>700</td><td>Rp 27.000/box</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="menu-kiri">
+                <div class="kotak">
+                    <h3>Form Pemesanan</h3>
+                    <form name="form1" method="post" action="proses.php" onsubmit="return validasi()">
+                        <table align="center" border="0">
+                            <tr>
+                                <td>Nama Lengkap <font color="red">*</font></td>
+                                <td><input name="nama" type="text" id="nama" width="100%"></td>
+                            </tr>
+                            <tr>
+                                <td>Alamat <font color="red">*</font></td>
+                                <td><textarea name="alamat" id="alamat" rows="5"></textarea></td> </textarea>
+                            </tr>
+                            <tr>
+                                <td>No. Telp/ WA <font color="red">*</font></td>
+                                <td><input name="telp" type="number" id="telp"></td> </tr>
+                            </tr>
+                            <tr>
+                                <td>Material <font color="red">*</font></td>
+                                <td><select name="material" id="material">
+                                    <option value=""> </option>
+                                    <option value="Semen">Semen</option>
+                                    <option value="Pipa">Pipa</option>
+                                    <option value="Baja Ringan">Baja Ringan</option>
+                                    <option value="Gemteng Metal">Genteng Metal</option>
+                                    <option value="Keramik">Keramik</option>
+                                </select>
+                                    <!-- <input name="material" type="text" id="material"></td> </tr> -->
+                            </tr>
+                            <tr>
+                                <td>Merek <font color="red">*</font></td>
+                                <td><input name="merek" type="text" id="merek"></td> </tr>
+                            </tr>
+                            <tr>
+                                <td>Jumlah <font color="red">*</font></td>
+                                <td><input name="jumlah" type="number" id="jumlah"></td> </tr>
+                            </tr>
+                            <tr>
+                                <td>Pesan</td>
+                                <td><textarea name="pesan" id="komentar" rows="5"></textarea></td> </textarea>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><button type="submit" name="submit">Kirim</button><button type="reset" name="reset">Batal</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div class="menu-kanan">
+                <div class="kotak">
+                    <h3>Lihat Struct</h3>
+                    <img src="background-atas.jpg.crdownload" alt="background-atas">
+                    <p>Terimakasih telah melakukan pemesanan di website <b>Toko Bangunan.</b>
+                        Lihat Pesanan Anda!!</p>
+                    <a class="tombol tombol-lihat" href="struct.txt">Klik Disini</a>
+                </div>
+            </div>
+        <footer>
+            Copyright © 2022-2023 All Right Reserved - Designed By Fahrizky S.I
+        </footer>
+    </body>
+    <script language="javascript">
+        function validasi() {
+            if (document.forms["form1"]["nama"].value == "") {
+                alert("Nama Tidak Boleh Kosong");
+                document.forms["form1"]["nama"].focus();
+                return false;
+            }
+            if (document.forms["form1"]["alamat"].value == "") {
+                alert("Alamat Tidak boleh ksosong");
+                document.forms["form1"]["alamat"].focus();
+                return false;
+            }
+            if (document.forms["form1"]["telp"].value=="") {
+                alert("No Telp tidak boleh kosong");
+                document.forms["form1"]["telp"].focus();
+                return false;
+            }
+            if (document.forms["form1"]["material"].value=="") {
+                alert("Material harus di isi");
+                document.forms["form1"]["material"].focus();
+                return false;
+            }
+            if (document.forms["form1"]["merek"].value=="") {
+                alert("Merek tidak boleh kosong");
+                document.forms["form1"]["merek"].focus();
+                return false;
+            }
+            if (document.forms["form1"]["jumlah"].value=="") {
+                alert("Jumlah harus diisi");
+                document.forms["form1"]["jumlah"].focus();
+                return false;
+            }
+            window.alert("Terimakasih telah melakukan pemesanan pada website kami!!")
+        }
+    </script>
+</html>
